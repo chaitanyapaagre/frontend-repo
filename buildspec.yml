@@ -8,8 +8,6 @@ phases:
       - echo Installing frontend dependencies...
       - cd application-code/web-tier
       - npm install
-      - cd ../../application-code/backend-tier
-      - 
 
   build:
     commands:
@@ -17,5 +15,5 @@ phases:
       - cd ../../application-code/web-tier
       - npm run build
       - echo Build docker image...
-      -docker build -t
-      -echo build complete.
+      - docker build -t
+      - echo build complete.
