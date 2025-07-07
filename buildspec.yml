@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo Installing frontend dependencies...
+      - cd application-code/web-tier
+      - npm install
+      - cd ../../application-code/backend-tier
+      - 
+
+  build:
+    commands:
+      - echo Building frontend...
+      - cd ../../application-code/web-tier
+      - npm run build
+      - echo Build docker image...
+      -docker build -t
+      -echo build complete.
